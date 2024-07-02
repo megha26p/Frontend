@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact us</title>
+    </head>
+    <style>
+         .navigationBar {
+      background-color: #141313;
+      overflow: hidden;
+    }
+
+    .navigationBar a {
+      float:inline-start ;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 18px 10px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navigationBar a:hover {
+      background-color: #e2ebee;
+      color: black;
+    }
+
+    .navigationBar a.active {
+      background-color: #a0b4ac;
+      color: white;
+    }
+    
+    body{
+      background-color: grey;
+    }
+    </style>
+    <body>
+        <nav class="navigationBar" style="height: fit-content;">
+            <a class="" href="#home" onClick="activeHome()" id="home">Home</a>
+            <a class="" href="site.html" onClick="activesite()" id="sitenname">Sitename</a>
+            <a class="activeclass1" href="contactus.html" onClick="activecontact()" id="contact">Contact</a>
+          </nav>
+          <script type="text/javascript">
+            function activeHome() {
+              document.getElementById("home").classList.add("active");
+              document.getElementById("sitename").classList.remove("active");
+              document.getElementById("contact").classList.remove("active");
+              
+            }
+            function activesite() {
+              document.getElementById("home").classList.remove("active");
+              document.getElementById("sitename").classList.add("active");
+              document.getElementById("contact").classList.remove("active");
+              
+            }
+            function activecontact() {
+              document.getElementById("home").classList.remove("active");
+              document.getElementById("sitename").classList.remove("active");
+              document.getElementById("contact").classList.add("active");
+            }
+            </script>
+            <p>
+                <h2>HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visible or audible web pages. Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by the web page designer's additional use of CSS. Many of the text elements are mentioned in the 1988 ISO technical report TR 9537 Techniques for using SGML, which describes the features of early text formatting languages such as that used by the RUNOFF command developed in the early 1960s for the CTSS (Compatible Time-Sharing System) operating system. These formatting commands were derived from the commands used by typesetters to manually format documents.</h2> 
+            </p>
+            <hr>
+            <form action="javascript:submitform()" onsubmit=" return validate()">
+                        NAME:<input type="text" id="name"   placeholder="Eg:Megha Patro"><br>
+                        <br>
+                        EMAIL:<input type="text" id="text"  required><br>
+                        <br>
+                      <div style="background-color: beige; width: 100px;">
+                        <select>
+                        <option value="0" style="font-family: Georgia, 'Times New Roman', Times, serif;">FAVOURITE GENRE</option>
+                        <option value="1">Fantasy</option>
+                        <option value="2">Romance</option>
+                        <option value="3">Comedy</option>
+                        <option value="4">Horror</option>
+                        <option value="5">Thriller</option>
+                      </select>
+                      </div>
+                        <input type="submit" name="submit" value="Submit"><br>
+                  
+            </form>
+            <script>
+                 function validate()
+            {
+                let validate =false;
+                let ele = document.getElementById("name");
+                if(ele.value.length <5)
+                {
+                    window.alert("Name must be greater than or equal to 5");
+                    return false;
+                }
+               else{
+                return true;
+               }
+            }
+            function submitform()
+            {
+                window.alert("FORM SUBMITTED");}
+            </script>
+            <hr>
+           <footer>
+            <style>
+              h5{text-align: center;}
+            </style>
+            <p><h5>---ALL RIGHTS RESERVED---</h5></p>
+          </footer>
+    </body>
+</html>

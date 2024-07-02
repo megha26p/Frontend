@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>The Site</title>
+        <style>
+         h1{text-align: center; 
+        }
+        </style>
+    </head>
+    <style>
+        /*table {
+      border : 1px solid black;
+    }
+    th {
+      border : 1px solid black;
+    }
+    td {
+      border : 1px solid black;
+      text-align: center;
+    }
+    form {
+      border : 1px solid black;
+      padding: 10px;
+    }*/
+         .navigationBar {
+      background-color: #141313;
+      overflow: hidden;
+    }
+
+    .navigationBar a {
+      float:inline-start ;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 18px 10px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navigationBar a:hover {
+      background-color: #e2ebee;
+      color: black;
+    }
+
+    .navigationBar a.active {
+      background-color: #7b8f86;
+      color: white;
+    }
+    body{
+      background-color: grey;
+    }
+    </style>
+    <body>
+      <img height="100" src="logo.image.jpg" alt="logo">
+      <style>
+        img{border-radius: 80%;}
+      </style>
+        <h1> Welcome To The Site</h1>
+        <nav class="navigationBar" style="height: fit-content;">
+            <a class="active class1" href="#home" onClick="activeHome()" id="home">Home</a>
+            <a class="" href="site.html" onClick="activesite()" id="sitenname">Sitename</a>
+            <a class="" href="contactus.html" onClick="activecontact()" id="contact">Contact</a>
+          </nav>
+          <script type="text/javascript">
+            function activeHome() {
+              document.getElementById("home").classList.add("active");
+              document.getElementById("sitename").classList.remove("active");
+              document.getElementById("contact").classList.remove("active");
+              
+            }
+            function activesite() {
+              document.getElementById("home").classList.remove("active");
+              document.getElementById("sitename").classList.add("active");
+              document.getElementById("contact").classList.remove("active");
+              
+            }
+            function activecontact() {
+              document.getElementById("home").classList.remove("active");
+              document.getElementById("sitename").classList.remove("active");
+              document.getElementById("contact").classList.add("active");
+            }
+            </script>
+             <table style="width: 100%;">
+              <tr>
+             <!--<th><img height="90" src="image...jpg" alt="image">-->
+      
+         <!-- <nav class="navigationBar">
+              <a href="http://127.0.0.1:5500/assignment2.html" target="_blank">sitename</a>
+          </nav></th>
+          <th>
+              <nav class="navigationBar">
+                  <a href="http://127.0.0.1:5500/assignment2.html" target="_blank"> contact us</a>
+              </nav>
+          </th>-->
+              </tr>
+              <tr>
+                  <td rowspan="10" colspan="2"><h2>HTMLis a markup language that web browsers use to interpret and compose text, images, and other material into visible or audible web pages. Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by the web page designer's additional use of CSS. Many of the text elements are mentioned in the 1988 ISO technical report TR 9537 Techniques for using SGML, which describes the features of early text formatting languages such as that used by the RUNOFF command developed in the early 1960s for the CTSS (Compatible Time-Sharing System) operating system. These formatting commands were derived from the commands used by typesetters to manually format documents.</h2></td>
+          </table>
+          <table style="height: 100%;">
+              <tr>
+                  <td><h2>Apple Inc. is an American multinational corporation and technology company headquartered in Cupertino, California, in Silicon Valley. It designs, develops, and sells consumer electronics, computer software, and online services. Devices include the iPhone, iPad, Mac, Apple Watch, Vision Pro, and Apple TV; operating systems include iOS, iPadOS, and macOS; and software applications and services include iTunes, iCloud, Apple Music, and Apple TV+.</h2></td>
+                  <td><img height="300" src="business_plaintext_apple_1313768378.webp" alt="image"></td>
+              
+                  
+              </tr>
+              <tr>
+                  <td>
+                      <img height="300" src="111005-jobs-hmed-457p.webp" alt="image">
+                  </td>
+                  <td><h2>Steven Paul Jobs (February 24, 1955,October 5, 2011) was an American businessman, inventor, and investor best known for co-founding the technology company Apple Inc. Jobs was also the founder of NeXT and chairman and majority shareholder of Pixar. He was a pioneer of the personal computer revolution of the 1970s and 1980s, along with his early business partner and fellow Apple co-founder Steve Wozniak.</h2></td>
+                 </tr>
+              <tr>
+                  <td colspan="2" align="center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lcZDWo6hiuI?autoplay=0&mute=1&controls=1_"></iframe>
+                  </td>
+              <tfoot>
+                  <tr>
+                      <td colspan="2">
+                          <style>
+                            h5{text-align: center;}
+                          </style> 
+                          <h5>----ALL RIGHTS RESERVED----</h5>
+                      </td>
+                  </tr>
+              </tfoot>
+          </table>
+    </body>
+</html>
