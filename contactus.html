@@ -29,10 +29,29 @@
       background-color: #a0b4ac;
       color: white;
     }
-    
     body{
-      background-color: grey;
-    }
+        
+            background-color: grey;
+        }
+    
+        .form-container {
+            background-color: #555050;
+            padding: auto;
+            border-radius: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: auto;
+            margin-top: auto;
+        }   
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="checkbox"],
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px ;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }     
     </style>
     <body>
         <nav class="navigationBar" style="height: fit-content;">
@@ -62,23 +81,29 @@
             <p>
                 <h2>HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visible or audible web pages. Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by the web page designer's additional use of CSS. Many of the text elements are mentioned in the 1988 ISO technical report TR 9537 Techniques for using SGML, which describes the features of early text formatting languages such as that used by the RUNOFF command developed in the early 1960s for the CTSS (Compatible Time-Sharing System) operating system. These formatting commands were derived from the commands used by typesetters to manually format documents.</h2> 
             </p>
-            <hr>
+            <div class="form-container">
             <form action="javascript:submitform()" onsubmit=" return validate()">
-                        NAME:<input type="text" id="name"   placeholder="Eg:Megha Patro"><br>
+                        <h3>NAME :</h3><input type="text" id="name"   placeholder="Eg:Megha Patro" required><br>
                         <br>
-                        EMAIL:<input type="text" id="text"  required><br>
+                       <h3>EMAIL :</h3><input type="text" id="text"  required><br>
                         <br>
                       <div style="background-color: beige; width: 100px;">
                         <select>
-                        <option value="0" style="font-family: Georgia, 'Times New Roman', Times, serif;">FAVOURITE GENRE</option>
+                        <h3><option value="0" style="font-family: Georgia, 'Times New Roman', Times, serif;">FAVOURITE GENRE</option>
                         <option value="1">Fantasy</option>
                         <option value="2">Romance</option>
                         <option value="3">Comedy</option>
                         <option value="4">Horror</option>
                         <option value="5">Thriller</option>
+                        </h3>
                       </select>
                       </div>
-                        <input type="submit" name="submit" value="Submit"><br>
+                      <label>
+                        <input type="checkbox" name="subscribe">
+                        <h3>Subscribe to newsletter</h3>
+                    </label>
+                        <!--<input type="submit" name="submit" value="Submit"><br>-->
+                       <button type="submit">Submit</button>
                   
             </form>
             <script>
